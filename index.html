@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Fox</title>
+</head>
+<link href="https://fonts.google.com/specimen/Poetsen+One" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/*css Reset*/
+body{
+    font-family: 'Poetsen One';
+    margin: 0px;
+    padding: 0px;
+    background: url('img/Structure\ gym.jpg');
+    height:655px;
+}
+.left{
+    position: absolute;
+    left: 34px;
+    top:20px ;
+    display: inline-block;
+}
+.left img{
+    width: 115px;
+    filter: invert(100%);
+}
+.left div{
+text-align: center;
+color: azure;
+font-size: 26px;
+}
+.mid{
+    display: block;
+    width: 50%;
+    margin: 25px auto;
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top:20px ;
+    display: inline-block;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 23px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+    font-style: initial;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline; 
+    color:grey;
+}
+.btn{
+    margin: 0px 9px;
+    padding: 4px 14px;
+    color:bisque;
+    background-color: black;
+    border: 2px solid rgb(155, 153, 106);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Poetsen One';
+}
+.btn:hover{
+    background-color: grey;
+}
+.container {
+    margin: 0px 390px;
+    padding: 140px;
+    width: 700px;
+    height:200px;
+    border-radius: 28px;
+}
+.form-group input {
+    font-family: 'Poetsen One';
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.container h1{
+   text-align: left;
+   color: rgb(152, 7, 192);  
+}
+.container button {
+    display: block;
+    width: 44%;
+    margin: 11px;
+}
+</style>
+<body>
+    <header class="Header">
+       <!--left box for bogo-->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Fire fox  </div>
+        </div>
+         <!---mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Caluculator</a></li>
+                <li><a href="#">Contact Us</a></li> 
+             </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+    <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+    <h1>Join the best gym of Kurnool</h1>
+    <from action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" Placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" Placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" Placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" Placeholder="Enter your weight">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" Placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </from>
+    </div>
+</body>
+</html>
